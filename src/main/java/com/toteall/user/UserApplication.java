@@ -9,18 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @Slf4j
 @SpringBootApplication
-public class UserApplication implements CommandLineRunner {
-
-	@Autowired
-	private UserRepository userRepository;
+public class UserApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(UserApplication.class, args);
-	}
-
-	@Override
-	public void run(String... args) throws Exception {
-		log.info("Helloooooooooooooooooooooooooooooooo");
-		log.info(userRepository.findAll().toString());
 	}
 }
