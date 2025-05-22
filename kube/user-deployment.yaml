@@ -23,6 +23,10 @@ spec:
               value: jdbc:postgresql://postgres-service:5432/retail  # Replace with PostgreSQL service name and DB
             - name: SPRING_JPA_HIBERNATE_DDL_AUTO
               value: update
+            - name: SPRING_DATASOURCE_USERNAME
+              value: toteall
+            - name: SPRING_DATASOURCE_PASSWORD
+              value: toteall
           resources:
             requests:
               memory: "512Mi"
